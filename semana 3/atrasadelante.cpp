@@ -9,3 +9,7 @@ int main(){
     z = num%1000/100;
     a = num%100/10;
     b = num%10/1;
+
+    cout<<b<<a<<z<<y<<x<<endl;
+    return 0;
+}
