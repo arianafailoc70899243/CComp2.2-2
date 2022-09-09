@@ -1,4 +1,6 @@
 #include <string>
+#include <iostream>
+using namespace std;
 
 class Account {
 
@@ -17,16 +19,14 @@ class Account {
         }
 
         void withdrawl(int withdrawing){
-            if(withdrawing <= balance)
+            if(withdrawing <= balance){
                 balance = balance-withdrawing;
-        }
-            else if (withdrawing > balance){}
-                cout<<"no puedes retirar esa cantidad porque excediste tu limite"<<endl
+            }
+            else if (withdrawing > balance){
+                cout<<"no puedes retirar esa cantidad porque excediste tu limite"<<endl;
 
             }
-
-
-
+        }
         int getBalance() const {
             return balance;
         }
@@ -39,7 +39,9 @@ class Account {
             return name;
         }
 
-    private:
+    private: 
         std::string name;
         int balance{0};
+
+
 };
