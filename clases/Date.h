@@ -9,7 +9,7 @@ using namespace std;
         int year = 0;
     public:
     Date::Date(int _month,int _day,int _year): month {_month},day{day},year {_year}{
-            if(1<=_month && month<=12 ){
+            if(1>=_month && month<=12 ){
                 cout<<"ok"<<endl;
             }
     }
