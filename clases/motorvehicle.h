@@ -4,20 +4,19 @@ using namespace std;
 
 class MotorVehicle {
     private:
-    std::string make;
-    std::string fuellType;
+    string make;
+    string fuellType;
     int year0fManufacture;
-    std::string color;
+    string color;
     int engineCapacity;
 
     public:
-    MotorVehicle::MotorVehicle(std::string _make,std::string _fuellType, int _year0fManufacture, std::string _color,int engineCapacity){
+    MotorVehicle::MotorVehicle(std::string _make,std::string _fuellType, int _year0fManufacture, std::string _color,int _engineCapacity) :
     make{_make}, fuellType{_fuellType}, year0fManufacture{_year0fManufacture},
-    color{_color},engineCapacity{_engineCapacity};
-
+    color{_color},engineCapacity{_engineCapacity}{
     }
 
-    //método modificador
+    //establecemos valores a los atributos 
     void setmake(string _make){
          make = _make;
     }
@@ -33,17 +32,17 @@ class MotorVehicle {
     void engineCapacity(int _engineCapacity){
         engineCapacity = _engineCapacity
     }
-    //metodo de acceso
+    //mostrar la inf que tiene almacenadas las variables
 
     string getmake(){
         return make;
     }
-    string getsetfuellType(){
-        return setfuellType;
+    string getfuellType(){
+        return fuellType;
     }
 
-    int setyear0fManufacture(){
-        return setyear0fManufacture;
+    int getyear0fManufacture(){
+        return year0fManufacture;
     }
 
     string color(){

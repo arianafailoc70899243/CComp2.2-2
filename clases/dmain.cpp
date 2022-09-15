@@ -4,8 +4,8 @@
 using namespace std;
 
 int main(){
-    Date date1;
-    date1.DisplayDate(12,09,2022);
+    Date date1(12,9,2022);
+    date1.DisplayDate();
 
     return 0;
 }
