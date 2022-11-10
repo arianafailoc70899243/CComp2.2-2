@@ -1,11 +1,12 @@
 #include <iostream>
 #define __POINT.H__
+using namespace std;
 
 class Point{
     private:
         int x, y;
     public:
-        Point(int _x , int _y) : x(_x) , y(_y){}
+        Point(int _x= 0 , int _y= 0) : x(_x) , y(_y){}
 
     void setX(int _x){
         x = _x;
@@ -21,6 +22,9 @@ class Point{
 
     int getY()const{
         return y;
+    }
+    void print ()const{
+        cout<<"("<<x<<","<<y<<")"<<endl;
     }
 
     
